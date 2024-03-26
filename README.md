@@ -18,46 +18,48 @@ AutoProjectStructure is a Python script designed to automate the tedious environ
 
 ## Project Structure
 
-```plaintext
-project_name
-│
-├── app_name
-│   ├── authentications       # Custom authentication classes
-│   │   ├── __init__.py
-│   │   ├── ...
-│   ├── permissions           # Custom permission classes
-│   │   ├── ...
-│   ├── viewsets              # Controllers or viewsets classes
-│   │   ├── ...
-│   ├── models
-│   │   ├── ...
-│   ├── serializers
-│   │   ├── ...
-│   ├── utils
-│   │   ├── ...
-│   ├── migrations
-│   │   ├── ...
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   └── urls.py
-│
-├── config
-│   ├── settings
-│   │   ├── __init__.py
-│   │   ├── base.py
-│   │   ├── production.py
-│   │   └── local.py
-│   ├── __init__.py
-│   ├── wsgi.py
-│   └── asgi.py
-│
-├── .dockerignore
-├── .gitignore
-├── manage.py
-├── README.md
-└── Dockerfile
-```
+The structure below provides a clear visual representation of the directory hierarchy of the Django project, making it easy for users to understand the organization of files and directories.
+
+   ```plaintext
+   project_name
+   │
+   ├── app_name
+   │   ├── authentications       # Custom authentication classes
+   │   │   ├── __init__.py
+   │   │   ├── ...
+   │   ├── permissions           # Custom permission classes
+   │   │   ├── ...
+   │   ├── viewsets              # Controllers or viewsets classes
+   │   │   ├── ...
+   │   ├── models
+   │   │   ├── ...
+   │   ├── serializers
+   │   │   ├── ...
+   │   ├── utils
+   │   │   ├── ...
+   │   ├── migrations
+   │   │   ├── ...
+   │   ├── __init__.py
+   │   ├── admin.py
+   │   ├── apps.py
+   │   └── urls.py
+   │
+   ├── config
+   │   ├── settings
+   │   │   ├── __init__.py
+   │   │   ├── base.py
+   │   │   ├── production.py
+   │   │   └── local.py
+   │   ├── __init__.py
+   │   ├── wsgi.py
+   │   └── asgi.py
+   │
+   ├── .dockerignore
+   ├── .gitignore
+   ├── manage.py
+   ├── README.md
+   └── Dockerfile
+   ```
 
 ## Installation
 
