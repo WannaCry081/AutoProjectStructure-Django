@@ -10,6 +10,10 @@ class AutoProjectStructure:
         pass
     
     
+    def setup_project(self):
+        pass
+    
+    
 
 
 def main():
