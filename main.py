@@ -21,7 +21,8 @@ def main():
               -------------------------
               
               - Monolithic Architecture
-              - Public Repository only           
+              - Public Repository only      
+              - Python Installed     
               """)
         
         project_name = input("Enter Project Name: ").strip()
