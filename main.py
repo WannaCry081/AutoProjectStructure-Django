@@ -14,6 +14,7 @@ def main():
     github_repository = ""
     
     while True:
+        print("\033[H\033[2J")
         print("""
               -------------------------
                 AutoProjectStructure 
@@ -59,10 +60,10 @@ def main():
             project.setup_version_control(github_repository)
             
             print(f"""
-                  -----------------------------------------------
-                  Successfully created '{project_name}' directory. 
-                        Happy Hacking! by @WannaCry081
-                  -----------------------------------------------
+            ------------------------------------------------
+            Successfully created '{project_name}' directory. 
+                     Happy Hacking! by @WannaCry081
+            ------------------------------------------------
                   """)
             break
                 
