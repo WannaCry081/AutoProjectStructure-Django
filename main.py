@@ -1,6 +1,7 @@
 import os
 import requests
 from pathlib import Path
+from src import AutoProjectStructure
                 
     
 def verify_github_repository(link):
