@@ -139,7 +139,17 @@ class AutoProjectStructure:
 
         for command in commands:
             os.system(command)
+            
     
+    def create_structure(self, file_name, contents = None): 
+        if contents is None: 
+            open(file_name, "w+").close()
+        
+        else:
+            with open(file_name, "w") as file:
+                file.writelines(contents)
+                file.close()
+                
     
 def verify_github_repository(link):
     response = requests.get(link)
