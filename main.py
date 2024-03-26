@@ -124,7 +124,21 @@ class AutoProjectStructure:
     
     
     def setup_version_control(self, github_repository):
-        pass
+        commands = [
+            "git init",
+            "git add .",
+            "git commit -m \"Initial commit\"",
+            "git branch -M main"
+        ]
+
+        if github_repository:
+            commands.append(f"git remote add origin {github_repository}")
+            commands.append("git push -u origin main")
+
+        commands.append("git checkout -b develop")
+
+        for command in commands:
+            os.system(command)
     
     
 def verify_github_repository(link):
