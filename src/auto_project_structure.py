@@ -57,7 +57,9 @@ class AutoProjectStructure:
         
         os.mkdir("api")
         os.chdir("api")
-        subprocess.run(["venv\\Scripts\\activate.bat", "&&", "django-admin", "startapp", "v1"])
+        
+        subprocess.run(["..\\venv\\Scripts\\activate.bat", "&&", "django-admin", "startapp", "v1"])
+        
         os.chdir("v1")
         
         for file in to_remove:
