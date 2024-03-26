@@ -1,3 +1,11 @@
+import os
+import requests
+import subprocess
+from pathlib import Path
+
+
+class AutoProjectStructure:
+    pass
 
 
 def main():
