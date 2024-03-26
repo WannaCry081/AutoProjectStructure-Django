@@ -5,7 +5,11 @@ from pathlib import Path
 
 
 class AutoProjectStructure:
-    pass
+    
+    def setup_environment(self, project_name):
+        pass
+    
+    
 
 
 def main():
