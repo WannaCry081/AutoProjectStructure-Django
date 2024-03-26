@@ -40,6 +40,7 @@ class AutoProjectStructure:
             "tests\\__init__.py",
             "serializers\\__init__.py",
             "viewsets\\__init__.py",
+            "utils\\__init__.py",
             "urls.py"
         ]
         
@@ -52,11 +53,11 @@ class AutoProjectStructure:
         self.create_structure("README.md", [f"# {project_name}"])
         
         subprocess.run(["venv\\Scripts\\activate.bat", "&&", "pip", "install", "-r", "requirements.txt"])
-        subprocess.run(["django-admin", "startproject", "config", "."])
+        subprocess.run(["venv\\Scripts\\activate.bat", "&&", "django-admin", "startproject", "config", "."])
         
         os.mkdir("api")
         os.chdir("api")
-        subprocess.run(["django-admin", "startapp", "v1"])
+        subprocess.run(["venv\\Scripts\\activate.bat", "&&", "django-admin", "startapp", "v1"])
         os.chdir("v1")
         
         for file in to_remove:
