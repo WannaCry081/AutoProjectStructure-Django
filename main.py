@@ -14,7 +14,9 @@ class AutoProjectStructure:
         pass
     
     
-
+    def setup_version_control(self, github_repository):
+        pass
+    
 
 def main():
     pass
