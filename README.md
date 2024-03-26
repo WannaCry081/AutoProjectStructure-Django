@@ -16,6 +16,49 @@ AutoProjectStructure is a Python script designed to automate the tedious environ
 - pathlib
 - subprocess
 
+## Project Structure
+
+```plaintext
+project_name
+│
+├── app_name
+│   ├── authentications       # Custom authentication classes
+│   │   ├── __init__.py
+│   │   ├── ...
+│   ├── permissions           # Custom permission classes
+│   │   ├── ...
+│   ├── viewsets              # Controllers or viewsets classes
+│   │   ├── ...
+│   ├── models
+│   │   ├── ...
+│   ├── serializers
+│   │   ├── ...
+│   ├── utils
+│   │   ├── ...
+│   ├── migrations
+│   │   ├── ...
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   └── urls.py
+│
+├── config
+│   ├── settings
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   ├── production.py
+│   │   └── local.py
+│   ├── __init__.py
+│   ├── wsgi.py
+│   └── asgi.py
+│
+├── .dockerignore
+├── .gitignore
+├── manage.py
+├── README.md
+└── Dockerfile
+```
+
 ## Installation
 
 To use AutoProjectStructure, follow these steps:
